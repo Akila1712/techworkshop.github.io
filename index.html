@@ -18,322 +18,9 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
   </head>
-  <style>
 
-    @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
-@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
-.product-plans {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    list-style: none;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.product-plan {
-    background: #fff;
-    padding: 30px;
-    width: 300px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.product-plan:hover {
-    transform: translateY(-8px);
-}
-
-.product-plan .title {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.product-plan .price {
-    font-size: 32px;
-    margin: 15px 0;
-    color: #6440fb;
-}
-
-.features {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    text-align: left;
-}
-
-.features li {
-    margin: 8px 0;
-}
-
-.check::before {
-    content: "✔ ";
-    color: green;
-}
-
-.cross::before {
-    content: "✖ ";
-    color: red;
-}
-
-.btn {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background: #6440fb;
-    color: #fff;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.highlight {
-    border: 2px solid #6440fb;
-}
-
-    .professional-hero {
-  background: #f8f9fc;
-  padding: 100px 0;
-}
-
-.hero-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  color: #0a0f2c;
-}
-
-.hero-content h1 span {
-  color: #6440fb;
-}
-
-.hero-tag {
-  font-weight: 600;
-  color: #6440fb;
-}
-
-.hero-text {
-  color: #555;
-  margin: 20px 0;
-}
-
-.hero-buttons .btn {
-  padding: 12px 25px;
-  margin-right: 10px;
-  border-radius: 6px;
-}
-
-.btn.primary {
-  background: #6440fb;
-  color: #fff;
-}
-
-.btn.secondary {
-  border: 1px solid #6440fb;
-  color: #6440fb;
-}
-
-.hero-meta {
-  margin-top: 20px;
-  color: #777;
-}
-
-.hero-img {
-  height: 520px;        /* control height */
-  width: auto;          /* keep aspect ratio */
-  max-width: none;      
-  margin-left: -40%;
-}
-
-@media (max-width: 767px) {
-  .hero-img {
-    display: none;
-  }
-}
-.gallery-card {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: 0.3s;
-}
-
-.gallery-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.gallery-card:hover {
-  transform: translateY(-8px);
-}
-
-.gallery-content {
-  padding: 15px;
-}
-
-.gallery-content h5 {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.gallery-content p {
-  font-size: 14px;
-  color: #666;
-}
-
-.td_iconbox_title {
-  margin-top: 35px;
-  font-size: 28px;
-}
-
-.footer_logo{
-  width: 300px;
-  height: auto;
-
-}
-    @media (max-width: 767px) {
-  .logo {
-    width: 180px; /* smaller width for mobile */
-  }
-   .footer_logo{
-    width: 250px; /* smaller width for mobile */
-  }
-}
-
-.btn.secondary {
-  border: 1px solid #6440fb;
-  color: #6440fb !important;
-  background: transparent;
-}
-  /* =====================================================
-   CONTACT BACKGROUND ICONS & SHAPES
-===================================================== */
-.contact-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-section .container {
-  position: relative;
-  z-index: 2;
-}
-
-.contact-bg-shapes {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Background Icons */
-.contact-icon-bg {
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  opacity: 0.1;
-  z-index: 0;
-  pointer-events: none;
-  animation: floatMove 9s ease-in-out infinite;
-  color: #6440fb;
-}
-
-.contact-icon-bg svg {
-  width: 100%;
-  height: 100%;
-}
-
-.icon-phone { top: 30px; left: 20%; }
-.icon-mail { bottom: 50px; right: 30%; }
-.icon-location { top: 80%; right: 70%; }
-
-/* Floating Shapes */
-.shape-float {
-  position: absolute;
-  opacity: 0.7;
-  animation: floatMove 7s ease-in-out infinite;
-}
-
-.shape-1 { top: 20px; right: 8%; width: 65px; }
-.shape-2 { bottom: 40px; left: 9%; width: 55px; }
-.shape-3 { top: 15%; left: 4%; width: 45px; }
-.shape-4 { bottom: 50px; right: 14%; width: 75px; }
-
-.shape-float img {
-  width: 100%;
-  filter: brightness(0) saturate(100%) invert(33%) sepia(91%)
-          saturate(7482%) hue-rotate(248deg)
-          brightness(98%) contrast(101%);
-}
-
-/* SVG Lines */
-.bg-lines svg path,
-.circle svg path {
-  stroke: #6440fb !important;
-  opacity: 0.7;
-}
-
-.bg-lines:first-child {
-  position: absolute;
-  top: -40px;
-  left: -180px;
-  width: 600px;
-  transform: rotate(-2deg);
-}
-
-.right-svg {
-  position: absolute;
-  bottom: 30px;
-  right: -180px;
-  width: 510px;
-  transform: rotate(12deg);
-}
-
-/* Animation */
-@keyframes floatMove {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-14px); }
-  100% { transform: translateY(0); }
-}
-/* MOBILE ONLY - REMOVE BACKGROUND SHAPES & ICONS */
-@media (max-width: 768px) {
-
-  .contact-bg-shapes,
-  .contact-icon-bg,
-  .shape-float,
-  .bg-lines,
-  .right-svg {
-    display: none !important;
-  }
-
-}
-.floating-call {
-  position: fixed;
-  bottom: 75px;
-  right: 20px;
-  width: 50px;   /* 👈 same as scroll */
-  height: 50px;
-
-  background: #6c4cff;   /* 👈 purple same theme */
-  color: #fff;
-
-  border-radius: 50%;
-  font-size: 18px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-decoration: none;
-  z-index: 999;
-
-  box-shadow: 0 5px 15px rgba(108, 76, 255, 0.4);
-}
-.floating-call:hover {
-  transform: scale(1.1);
-}
-
-  </style>
   <body class="td_theme_2">
     <!-- Start Preloader -->
     <div class="td_preloader">
@@ -819,44 +506,46 @@ Limited Seats <br>Only
 <div id="pricing">
   <h1 style="text-align:center;">Workshop Plans</h1>
 
-<p style="text-align:center; color:#6440fb; font-weight:600;">
-Each course runs for 5 weeks (Saturday sessions)
-</p>
+  <p style="text-align:center; color:#6440fb; font-weight:600;">
+    Every Saturday a new workshop – choose one or join all 5 workshops
+  </p>
+
 
 <ul class="product-plans">
 
     <!-- Single Workshop -->
     <li class="product-plan">
-        <div class="title">Single Course</div>
+        <div class="title">Single Workshop</div>
         <div class="price">₹300</div>
 
-        <ul class="features">
-            <li class="check">1 Course (5 Weeks)</li>
-            <li class="check">Hands-on Training</li>
-            <li class="check">Mini Project Included</li>
-            <li class="check">Certificate Provided</li>
-            <li class="cross">All 5 Courses</li>
-        </ul>
+     
+      <ul class="features">
+        <li class="check">Per Workshop Access</li>
+        <li class="check">Hands-on Practical Training</li>
+        <li class="check">Mini Project Included</li>
+        <li class="check">Certificate Provided</li>
+        <li class="cross">All 5 Workshops Access</li>
+      </ul>
 
         <button class="btn">Enroll Now</button>
     </li>
 
     <!-- Full Package -->
-    <li class="product-plan highlight">
-        <div class="badge">Best Value</div>
+     <li class="product-plan highlight">
+      <div class="badge">Best Value</div>
 
-        <div class="title">Full Package</div>
-        <div class="price">₹999</div>
+      <div class="title">Combo Offer</div>
+      <div class="price">₹999</div>
 
-        <ul class="features">
-            <li class="check">All 5 Courses</li>
-            <li class="check">5 Weeks Program</li>
-            <li class="check">Complete Tech Learning</li>
-            <li class="check">Mini Projects Included</li>
-            <li class="check">Certificate Provided</li>
-        </ul>
+      <ul class="features">
+        <li class="check">All 5 Workshops Access</li>
+        <li class="check">Complete 5-Week Program</li>
+        <li class="check">Mini Projects Included</li>
+        <li class="check">Certificate Provided</li>
+        <li class="check">Priority Support</li>
+      </ul>
 
-        <button class="btn">Enroll Now</button>
+      <button class="btn">Enroll Now</button>
     </li>
 
     <!-- Program Dates -->
